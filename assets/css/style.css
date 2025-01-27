@@ -83,6 +83,9 @@ h3 {
     li {
       padding: 0.5rem 0;
     }
+    .tablet_mode_row{
+        display: none;
+    }
   }
 }
 .social_link {
@@ -200,18 +203,19 @@ footer{
 }
 .description_video{
     flex-grow: 1;
-    /* display: grid; */
-    
-   /*  ul{
+    /* .tablet_mode_row>.card{
+        display: block;
+    }
+    ul{
         display: none;
-    } */
-
-  
+    }   */
 }
-
   .social_link {
-    a > span {
-      display: inline-block;
+    a{
+        padding: 0.5rem 3.3rem;
+       
+    }
+
     }
   }
   #advertising_banner {
@@ -227,7 +231,7 @@ footer{
         float: left;
     }
   }
-}
+
 
 @media screen and (min-width: 1019px) {
    main{
@@ -250,6 +254,16 @@ footer{
     
   
 }
+.social_link {
+    a{
+        padding: 1rem 1.7rem;
+    }
+    a > span {
+      display: inline-block;
+      color: black;
+      text-transform: uppercase;
+    }
+  }
    footer{
    
     display: flex;
