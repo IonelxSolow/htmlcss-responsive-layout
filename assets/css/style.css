@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: lightgray;
+}
+
+header{
+    background-color: white;
+    h2{
+        font-size: 2rem;
+        padding: 1rem;
+        font-family: monospace;
+        color: darkgoldenrod;
+        text-align: center;
+    }
+}
+main{
+    text-align: center;
+    width: 90%;
+   margin: auto;
+   #type_and_title{
+  
+    h3{
+        padding: 1rem 0;
+        color: grey;
+        font-size: 0.7rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    h1{
+        padding-bottom: 1rem;
+        color: blue;
+        font-size: 2rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+   }
+}
+
+ul{
+    list-style: none;
+    
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+h1{
+    text-align: left;
+    span{
+        display:none;
+    }
+}
+
+h3{
+    text-align: left;
+
+}
+
+.container{
+    background-color: white;
+    flex-wrap: wrap;
+    img{
+        width: 100%;
+    }
+    .description_video{
+        text-align: left;
+        padding: 2rem;
+        h3{
+            padding: 1rem 0 2rem;
+            font-size: 1.5rem;
+        }
+        li{
+            padding: 0.5rem 0;
+        }
+    }
+}
+
+video_section{
+   
+    img{
+        width: 100%;
+    }
+}
+
+.social_link{
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    a>span{
+        display: none;
+    }
+}
+#advertising_banner{
+    display: none;
+}
+
+/* ############################## */
+
+@media screen and (min-width: 480px) {
+    h1{
+        span{
+            display: inline-block
+        }
+    }
+   
+    .social_link{
+        a>span{
+            display: inline-block;
+        }
+    }
+    #advertising_banner{
+        display: block;
+    }
+}
