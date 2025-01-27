@@ -3,9 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root{
+    --gb-primary: #f6f5f3;
+    --bg-footer: #7c69a4;
+}
 body {
-  background-color: lightgray;
+  background-color: var(--gb-primary);
 }
 
 header {
@@ -13,8 +16,8 @@ header {
   h2 {
     font-size: 2rem;
     padding: 1rem;
-    font-family: monospace;
-    color: darkgoldenrod;
+    font-family:cursive;
+    color: #ff9614;
     text-align: center;
   }
 }
@@ -24,16 +27,16 @@ main {
   margin: auto;
   #type_and_title {
     h3 {
-        letter-spacing: 0.4rem;
+        letter-spacing: 0.3rem;
       padding: 1rem 0;
-      color: grey;
-      font-size: 0.7rem;
+      color: #aba5b2;
+      font-size: 1rem;
       font-family: "Courier New", Courier, monospace;
     }
 
     h1 {
       padding-bottom: 1rem;
-      color: blue;
+      color: #4e3969;
       font-size: 2rem;
       font-family: "Courier New", Courier, monospace;
     }
@@ -89,28 +92,52 @@ video_section {
 }
 
 .social_link {
+    margin: 1rem 0;
   padding: 1rem 0;
   justify-content: space-between;
   flex-wrap: nowrap;
+  a{
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px 25px 25px 25px;
+    .fa-facebook{
+        color: #1a77f3;
+      }
+      .fa-twitter{
+        color: #009eff;
+      }
+      .fa-instagram{
+        color: #e15387;
+      }
+      .fa-pinterest{
+        color: #e62222;
+      }
+      .fa-youtube{
+        color: #e62222;
+      }
+    }
+  }
   a > span {
     display: none;
   }
-}
+ 
 #advertising_banner {
   display: none;
 }
 
 #presentation{
-   
+    font-family:Arial, Helvetica, sans-serif;
     width: 100%;
     hr{
         border: none;
-        height: 1px;
+        height: 2px;
         width: 100px;
         margin: 0.5rem 0;
         background-color: orange;
     }
     h2{
+      
+        font-weight: 300;
         text-align: left;
     font-size: 40px;
     text-transform: uppercase;
@@ -125,15 +152,14 @@ video_section {
     p{
         font-size: 18px;
         line-height: 2rem;
-        letter-spacing: 2px;
         text-align: left
     }
 }
 
 footer{
-    padding: 2rem;
+    padding: 1rem;
     color: white;
-    background-color: blueviolet;
+    background-color: var(--bg-footer);
     text-align: center;
     font-size: 20px;
     a{
