@@ -67,6 +67,7 @@ h3 {
 }
 
 .container {
+    box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
   background-color: white;
   flex-wrap: wrap;
   img {
@@ -84,19 +85,13 @@ h3 {
     }
   }
 }
-
-video_section {
-  img {
-    width: 100%;
-  }
-}
-
 .social_link {
     margin: 1rem 0;
   padding: 1rem 0;
   justify-content: space-between;
   flex-wrap: nowrap;
   a{
+    box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
     background-color: white;
     padding: 0.5rem 1rem;
     border-radius: 25px 25px 25px 25px;
@@ -126,6 +121,7 @@ video_section {
 }
 
 #presentation{
+    margin-bottom: 3rem;
     font-family:Arial, Helvetica, sans-serif;
     width: 100%;
     hr{
@@ -189,11 +185,23 @@ footer{
 /* ############################## */
 
 @media screen and (min-width: 680px) {
+    header{
+        h2{
+        text-align: left;
+    }
+}
   h1 {
     span {
       display: inline-block;
     }
   }
+.video_section{
+   flex-grow: 2;
+}
+.description_video{
+    flex-grow: 1;
+  
+}
 
   .social_link {
     a > span {
@@ -201,6 +209,20 @@ footer{
     }
   }
   #advertising_banner {
+    margin: 2rem 0;
     display: block;
+    img{
+    width: 100%;
+ 
+    }
+  }
+  #presentation{
+    img{
+        float: left;
+    }
   }
 }
+
+/* @media screen and (min-width: 1019px) {
+
+} */
